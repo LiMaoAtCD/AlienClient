@@ -8,6 +8,7 @@
 
 import UIKit
 import XCTest
+import Alamofire
 
 class AlienClientTests: XCTestCase {
     
@@ -23,7 +24,29 @@ class AlienClientTests: XCTestCase {
     
     func testExample() {
         // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+        var expectation: XCTestExpectation = self.expectationWithDescription("high expectation")
+        
+        var callbackString: String?
+        var err: NSError?
+        Alamofire.request(.GET, "192.168.2.132:3000", parameters: ["aa":"da"], encoding: .URL).responseString { (request, response, string, error) -> Void in
+            
+            XCTAssertNil(error, "request should be not nil")
+            XCTAssertNotNil(string, "something should be callback")
+            expectation.fulfill()
+        }
+
+        
+//        self.waitForExpectationsWithTimeout(<#XCTestCase#>)
+//        self.waitForExpectationsWithTimeout(10.0, handler: { (error) -> Void in
+//            XCTAssert(callbackString?, <#message: String#>)
+//        })
+        self.waitForExpectationsWithTimeout(2.0, handler: { (err) -> Void in
+//            XCTAssert(err != nil, "err should be nil")
+        
+        })
+        
+        
+        
     }
     
     func testPerformanceExample() {

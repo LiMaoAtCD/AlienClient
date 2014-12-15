@@ -24,13 +24,13 @@
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>67620B5EFA902936DF04070AF595B76AB0333747</key>
-		<string>../..Alamofire/</string>
+		<string>../..Alamofire</string>
 		<key>95438028B10BBB846574013D29F154A00556A9D1</key>
-		<string>../..Vendor/Nimble/</string>
+		<string>../..Vendor/Nimble</string>
 		<key>9AE09AB77FC8946E17AF0FF6B7070FF1B24E5517</key>
 		<string>../..</string>
 		<key>D0725CAC6FF2D66F2C83C2C48DC12106D42DAA64</key>
-		<string>../..Vendor/Quick/</string>
+		<string>../..Vendor/Quick</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/liamscofield/AlienClient.git</string>
@@ -44,17 +44,17 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>67620B5EFA902936DF04070AF595B76AB0333747</string>
+			<string>9AE09AB77FC8946E17AF0FF6B7070FF1B24E5517</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Alamofire</string>
+			<string>AlienClient</string>
 		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>9AE09AB77FC8946E17AF0FF6B7070FF1B24E5517</string>
+			<string>67620B5EFA902936DF04070AF595B76AB0333747</string>
 			<key>IDESourceControlWCCName</key>
-			<string>AlienClient</string>
+			<string>AlienClientAlamofire</string>
 		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>

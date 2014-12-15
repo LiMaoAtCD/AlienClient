@@ -17,6 +17,7 @@
 		8710AB971A36D0BD000A1362 /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 8710AB911A36D092000A1362 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		87229A1B1A3A7FA60087443D /* Quick.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 87229A171A3A7F8B0087443D /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		87229A1C1A3A7FA60087443D /* Nimble.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 87229A031A3A7F850087443D /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8754BF491A3EC18D002FD73E /* AsyncTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8754BF481A3EC18D002FD73E /* AsyncTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +152,7 @@
 		8710AB8B1A36D092000A1362 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		872299FA1A3A7F850087443D /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = Vendor/Nimble/Nimble.xcodeproj; sourceTree = "<group>"; };
 		87229A0A1A3A7F8B0087443D /* Quick.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quick.xcodeproj; path = Vendor/Quick/Quick.xcodeproj; sourceTree = "<group>"; };
+		8754BF481A3EC18D002FD73E /* AsyncTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				8710AB811A36D027000A1362 /* AlienClientTests.swift */,
+				8754BF481A3EC18D002FD73E /* AsyncTests.swift */,
 				8710AB7F1A36D027000A1362 /* Supporting Files */,
 			);
 			path = AlienClientTests;
@@ -463,6 +466,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8754BF491A3EC18D002FD73E /* AsyncTests.swift in Sources */,
 				8710AB821A36D027000A1362 /* AlienClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
