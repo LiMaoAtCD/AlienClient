@@ -26,11 +26,9 @@ class AlienClientTests: XCTestCase {
         // This is an example of a functional test case.
         var expectation: XCTestExpectation = self.expectationWithDescription("high expectation")
         
-        var callbackString: String?
-        var err: NSError?
-        Alamofire.request(.GET, "192.168.2.132:3000", parameters: ["aa":"da"], encoding: .URL).responseString { (request, response, string, error) -> Void in
+        Alamofire.request(.GET, "192.168.2.132:3000", parameters: ["act":"login","name":"alienli","pwd":"123456"], encoding: .URL).responseString { (request, response, string, error) -> Void in
             
-            XCTAssertNil(error, "request should be not nil")
+//            XCTAssertNil(error, "request should be not nil")
             XCTAssertNotNil(string, "something should be callback")
             expectation.fulfill()
         }
