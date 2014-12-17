@@ -15,26 +15,27 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
    
-        Alamofire.request(.GET, "http://192.168.2.132:3000", parameters: ["act":"login","name":"alienli","pwd":"123456"], encoding: .URL)
-            .responseString { (Request, NSURLResponse, String, error) -> Void in
-            println(String)
-        }.responseJSON { (request, response, json, error) -> Void in
-            if let data: AnyObject = json {
-                println(data)
-                
-            } else {
-                println("nil")
-            }
-        }
+//        Alamofire.request(.GET, "http://192.168.2.132:3000", parameters: ["act":"login","name":"alien","pwd":"1234567"], encoding: .URL).responseJSON { (request, response, json, error) -> Void in
+//            println("login result: \(json)")
+//        }
+//        Alamofire.request(.GET, "http://192.168.2.132:3000", parameters: ["act":"query","name":"alien","pwd":"1234567"], encoding: .URL).responseString { (req, res, string, error) -> Void in
+//            println("query result:\(string)")
+//            if let err = error {
+//                println(err)
+//            }
+//        }.responseJSON { (request, response, JSON, error) -> Void in
+//            println()
+//        }
         
-        Alamofire.request(.POST, "http://192.168.2.132:3000", parameters: ["act":"login","name":"Alien","pwd":"123456"], encoding: .URL).responseJSON { (request, response, json, error) -> Void in
+        
+        Alamofire.request(.POST, "http://192.168.2.132:3000", parameters: ["act":"register","username":"Alien","pwd":"123456"], encoding: .URL).responseJSON { (request, response, json, error) -> Void in
             if let data:AnyObject = json {
                 println(data)
             }else {
                 println("nil")
             }
         }
-        
+    
 
     }
 
